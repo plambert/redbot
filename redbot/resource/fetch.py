@@ -62,7 +62,7 @@ class RedFetcher(thor.events.EventEmitter):
         self.nonfinal_responses = []                  # type: List[HttpResponse]
         self.response = HttpResponse(self.add_note)   # type: HttpResponse
         self.exchange = None                          # type: thor.http.ClientExchange
-        self.follow_robots_txt = True # Should we pay attention to robots file?
+        self.follow_robots_txt = False # Should we pay attention to robots file?
         self.fetch_started = False
         self.fetch_done = False
 
